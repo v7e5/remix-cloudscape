@@ -1,0 +1,27 @@
+@keyframes awsui_searchbar_pac4k_1b0pe_1 {
+  0% {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -200% 0;
+  }
+
+}
+@keyframes awsui-fade-in-35003c {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+
+}
+.awsui_loading {
+  width:100%;
+  height: 2px;
+  background: linear-gradient(90deg,#99f7ff 0,#0096fa 10%,#bf80ff 24%,#7300e5 50%,#bf80ff 76%,#0096fa 90%,#99f7ff 100%);
+  background-size: 200% 100%;
+  background-position: 0 100%;
+  animation: awsui_searchbar_pac4k_1b0pe_1 3s cubic-bezier(0,.08,1,.82) infinite forwards,awsui-fade-in-35003c .25s cubic-bezier(.84,0,.16,1);
+  mask-image: linear-gradient(90deg,#0000 0,#0000 3%,#000 30%,#000 70%,#0000 97%,#0000);
+}
