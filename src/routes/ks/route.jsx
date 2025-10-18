@@ -2,7 +2,7 @@ import {memo} from 'react'
 import {Outlet} from 'react-router'
 import {BaseProvider} from './context'
 
-import Drawer from './drawer'
+import Drawer from './drawer_comp'
 
 const Z = memo(() => (
   <BaseProvider>
@@ -14,87 +14,60 @@ const handle = {
   crumb: {text: 'ks', to: '/ks'},
   contentType: 'dashboard',
   sidenav: {
-    header: {to: '/ks', text: 'elements'},
+    header: {to: '/ks', text: 'Components'},
     items: [
-      {
-        type: 'section',
-        text: 'form',
-        defaultExpanded: true,
-        items: [
-          {type: 'link', text: '_index', to: '/ks/form'},
-          {type: 'link', text: 'autosuggest', to: '/ks/form#autosuggests'},
-          {type: 'link', text: 'button', to: '/ks/form#selects'},
-          {type: 'link', text: 'button dropdown', to: '/ks/form#selects'},
-          {type: 'link', text: 'calendar', to: '/ks/form#datetimes'},
-          {type: 'link', text: 'checkbox', to: '/ks/form#checks'},
-          {type: 'link', text: 'date input', to: '/ks/form#datetimes'},
-          {type: 'link', text: 'date picker', to: '/ks/form#datetimes'},
-          {type: 'link', text: 'form container', to: '/ks/form#texts'},
-          {type: 'link', text: 'form field', to: '/ks/form#texts'},
-          {type: 'link', text: 'input', to: '/ks/form#texts'},
-          {type: 'link', text: 'multiselect', to: '/ks/form#selects'},
-          {type: 'link', text: 'popover', to: '/ks/form#selects'},
-          {type: 'link', text: 'radio group', to: '/ks/form#checks'},
-          {type: 'link', text: 'select', to: '/ks/form#selects'},
-          {type: 'link', text: 'text area', to: '/ks/form#texts'},
-          {type: 'link', text: 'tiles', to: '/ks/form#checks'},
-          {type: 'link', text: 'time input', to: '/ks/form#datetimes'},
-          {type: 'link', text: 'toggle', to: '/ks/form#checks'}
-        ]
-      },
-
-      {type: 'divider'},
-
-      {
-        type: 'section',
-        text: '...rest',
-        defaultExpanded: true,
-        items: [
-          {type: 'link', text: 'alert', to: '/ks/alert'},
-          {type: 'link', text: 'badge', to: '/ks/badge'},
-          {type: 'link', text: 'box', to: '/ks/box'},
-          {type: 'link', text: 'cards', to: '/ks/cards'},
-          {type: 'link', text: 'drawer', to: '/ks/drawer'},
-          {
-            type: 'link',
-            text: 'expandable section',
-            to: '/ks/expandablesection'
-          },
-          {type: 'link', text: 'flashbar', to: '/ks/flashbar'},
-          {type: 'link', text: 'grid', to: '/ks/grid'},
-          {type: 'link', text: 'icon', to: '/ks/icon'},
-          {
-            type: 'link',
-            text: 'modal / segmented control',
-            to: '/ks/modal_segmentedcontrol'
-          },
-          {type: 'link', text: 'pagination', to: '/ks/pagination'},
-          {type: 'link', text: 'progress bar', to: '/ks/progressbar'},
-          {type: 'link', text: 'property filter', to: '/ks/propertyfilter'},
-          {type: 'link', text: 'side navigation', to: '/ks/sidenav'},
-          {type: 'link', text: 'spinner', to: '/ks/spinner'},
-          {type: 'link', text: 'split panel', to: '/ks/split_panel'},
-          {type: 'link', text: 'status indicator', to: '/ks/statusindicator'},
-          {
-            type: 'expandable-link-group',
-            text: 'table',
-            to: '/ks/table',
-            items: [
-              {type: 'link', text: 'expanding rows', to: '/ks/table/expan'}
-            ]
-          },
-
-          {type: 'link', text: 'tabs', to: '/ks/tabs'},
-          {type: 'link', text: 'text content', to: '/ks/textcontent'},
-          {type: 'link', text: 'text filter', to: '/ks/textfilter'},
-          {type: 'link', text: 'token group', to: '/ks/tokengroup'}
-        ]
-      },
-
-      {type: 'divider'},
-
-      {type: 'link', text: 'raw form', to: '/ks/form_raw'},
-      {type: 'link', text: 'xxx', to: '/ks/xxx'}
+      {type: 'link', text: 'Alert', to: '/ks/alert'},
+      {type: 'link', text: 'Autosuggest', to: '/ks/form#autosuggests'},
+      {type: 'link', text: 'Badge', to: '/ks/badge'},
+      {type: 'link', text: 'Box', to: '/ks/box'},
+      {type: 'link', text: 'Breadcrumb group', to: '/ks/breadcrumb-group'},
+      {type: 'link', text: 'Button', to: '/ks/form#selects'},
+      {type: 'link', text: 'Button dropdown', to: '/ks/form#selects'},
+      {type: 'link', text: 'Calendar', to: '/ks/form#datetimes'},
+      {type: 'link', text: 'Cards', to: '/ks/cards'},
+      {type: 'link', text: 'Checkbox', to: '/ks/form#checks'},
+      {type: 'link', text: 'Column layout', to: '/ks/column-layout'},
+      {type: 'link', text: 'Container', to: '/ks/container'},
+      {type: 'link', text: 'Content layout', to: '/ks/content-layout'},
+      {type: 'link', text: 'Date input', to: '/ks/form#datetimes'},
+      {type: 'link', text: 'Date picker', to: '/ks/form#datetimes'},
+      {type: 'link', text: 'Drawer', to: '/ks/drawer'},
+      {type: 'link', text: 'Expandable section', to: '/ks/expandablesection'},
+      {type: 'link', text: 'File upload', to: '/ks/form#file-upload'},
+      {type: 'link', text: 'Flashbar', to: '/ks/flashbar'},
+      {type: 'link', text: 'Form container (Form)', to: '/ks/form#texts'},
+      {type: 'link', text: 'Form field', to: '/ks/form#texts'},
+      {type: 'link', text: 'Grid', to: '/ks/grid'},
+      {type: 'link', text: 'Header', to: '/ks/grid'},
+      {type: 'link', text: 'Icon', to: '/ks/icon'},
+      {type: 'link', text: 'Input', to: '/ks/form#texts'},
+      {type: 'link', text: 'Link', to: '/ks/link'},
+      {type: 'link', text: 'Loading bar', to: '/ks/loading-bar'},
+      {type: 'link', text: 'Modal', to: '/ks/modal_sc'},
+      {type: 'link', text: 'Multiselect', to: '/ks/form#selects'},
+      {type: 'link', text: 'Pagination', to: '/ks/pagination'},
+      {type: 'link', text: 'Popover', to: '/ks/form#selects'},
+      {type: 'link', text: 'Progress bar', to: '/ks/progressbar'},
+      {type: 'link', text: 'Property filter', to: '/ks/propertyfilter'},
+      {type: 'link', text: 'Radio group', to: '/ks/form#checks'},
+      {type: 'link', text: 'Segmented control', to: '/ks/modal_sc'},
+      {type: 'link', text: 'Select', to: '/ks/form#selects'},
+      {type: 'link', text: 'Side navigation', to: '/ks/sidenav'},
+      {type: 'link', text: 'Space between', to: '/ks/space-between'},
+      {type: 'link', text: 'Spinner', to: '/ks/spinner'},
+      {type: 'link', text: 'Split panel', to: '/ks/split_panel'},
+      {type: 'link', text: 'Status indicator', to: '/ks/statusindicator'},
+      {type: 'link', text: 'Table', to: '/ks/table'},
+      {type: 'link', text: 'Table (expanding rows)', to: '/ks/table/expan'},
+      {type: 'link', text: 'Tabs', to: '/ks/tabs'},
+      {type: 'link', text: 'Text area', to: '/ks/form#texts'},
+      {type: 'link', text: 'Text content', to: '/ks/textcontent'},
+      {type: 'link', text: 'Text filter', to: '/ks/textfilter'},
+      {type: 'link', text: 'Tiles', to: '/ks/form#checks'},
+      {type: 'link', text: 'Time input', to: '/ks/form#datetimes'},
+      {type: 'link', text: 'Toggle', to: '/ks/form#checks'},
+      {type: 'link', text: 'Token group', to: '/ks/tokengroup'},
+      {type: 'link', text: 'Top navigation', to: '/ks/topnav'}
     ]
   },
   drawer: [

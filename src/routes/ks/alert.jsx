@@ -1,9 +1,8 @@
 import {memo, useCallback} from 'react'
 import Alert from '~/components/alert'
 import Button from '~/components/button'
+import {CL} from '~/shell/cont'
 import {useBase, useBaseDispatch} from './context'
-
-import {CLWrap} from './x'
 
 const Z = memo(() => {
   const data = useBase()
@@ -15,7 +14,7 @@ const Z = memo(() => {
   }, [])
 
   return (
-    <CLWrap
+    <CL
       title='alert'
       actions={
         <Button name='xxx' onClick={diss}>
@@ -33,7 +32,7 @@ const Z = memo(() => {
           Versioning is not enabled for objects in bucket [IAM-user].
         </Alert>
       )}
-    </CLWrap>
+    </CL>
   )
 })
 
