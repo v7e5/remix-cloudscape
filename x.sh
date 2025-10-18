@@ -28,7 +28,7 @@ kg() {
   "type": "module",
   "scripts": {
     "build": "react-router build > build.log 2>&1",
-    "dev": "react-router dev --port 3030"
+    "dev": "react-router dev --port 8000"
   }
 }
 EOL
