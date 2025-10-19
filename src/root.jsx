@@ -1,6 +1,6 @@
 import '~/css/aws.css'
 import '~/css/custom.css'
-
+import {memo, useCallback, useMemo} from 'react'
 import {
   isRouteErrorResponse,
   Links,
@@ -11,7 +11,6 @@ import {
   useMatches,
   useRouteError
 } from 'react-router'
-import {memo, useCallback, useMemo} from 'react'
 import AppLayout from '~/components/app-layout'
 import BreadcrumbGroup from '~/components/breadcrumb-group'
 import {currentMode} from '~/components/internal/toolkit/internal/visual-mode'
@@ -21,8 +20,6 @@ import Flash from '~/shell/flash'
 import TopNav from '~/shell/topnav'
 
 import {GlobalProvider, useGlobal, useGlobalDispatch} from './context'
-
-import * as xxx from '~/components'
 
 const Layout = memo(({children}) => {
   return (
