@@ -1,7 +1,7 @@
 import {memo, useCallback} from 'react'
 import Alert from '~/components/alert'
 import Button from '~/components/button'
-import {CL} from '~/shell/cont'
+import {SB} from '~/shell/cont'
 import {useBase, useBaseDispatch} from './context'
 
 const Z = memo(() => {
@@ -14,8 +14,8 @@ const Z = memo(() => {
   }, [])
 
   return (
-    <CL
-      title='alert'
+    <SB
+      title='Alert'
       actions={
         <Button name='xxx' onClick={diss}>
           {data.alert ? 'hide' : 'show'}
@@ -32,7 +32,7 @@ const Z = memo(() => {
           Versioning is not enabled for objects in bucket [IAM-user].
         </Alert>
       )}
-    </CL>
+    </SB>
   )
 })
 

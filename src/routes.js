@@ -14,6 +14,10 @@ const routes = [
       {
         file: 'routes/ks/alert.jsx',
         path: '/ks/alert'
+      },
+      {
+        file: 'routes/ks/badge.jsx',
+        path: '/ks/badge'
       }
     ]
   }
