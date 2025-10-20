@@ -39,7 +39,7 @@ const handle = {
       {type: 'link', text: 'Form container (Form)', to: '/ks/form#texts'},
       {type: 'link', text: 'Form field', to: '/ks/form#texts'},
       {type: 'link', text: 'Grid', to: '/ks/grid'},
-      {type: 'link', text: 'Header', to: '/ks/grid'},
+      {type: 'link', text: 'Header', to: '/ks/header'},
       {type: 'link', text: 'Icon', to: '/ks/icon'},
       {type: 'link', text: 'Input', to: '/ks/form#texts'},
       {type: 'link', text: 'Link', to: '/ks/link'},

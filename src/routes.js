@@ -56,6 +56,14 @@ const routes = [
         path: '/ks/flashbar'
       },
       {
+        file: 'routes/ks/grid.jsx',
+        path: '/ks/grid'
+      },
+      {
+        file: 'routes/ks/header.jsx',
+        path: '/ks/header'
+      },
+      {
         file: 'routes/ks/sidenav.jsx',
         path: '/ks/sidenav'
       }
