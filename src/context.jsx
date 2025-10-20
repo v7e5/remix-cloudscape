@@ -20,7 +20,7 @@ const base = {
     items: []
   },
   sidenav: {
-    open: false,
+    open: true,
     header: undefined,
     items: []
   }
