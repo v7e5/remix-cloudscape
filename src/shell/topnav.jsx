@@ -23,17 +23,6 @@ const Z = memo(() => {
         }}
         utilities={utilities}
       />
-
-      <div>
-        <Toggle/>
-        <img
-          width='16'
-          height='16'
-          decoding='async'
-          src='/dark-mode.svg'
-          style={{color: 'transparent', marginTop: '3px'}}
-        />
-      </div>
     </div>
   )
 })
