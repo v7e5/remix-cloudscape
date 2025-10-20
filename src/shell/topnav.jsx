@@ -6,7 +6,7 @@ const utilities = [
     type: 'button',
     to: '/ks',
     variant: 'link',
-    text: 'kitchen sink',
+    text: 'Kitchen Sink',
     iconName: 'gen-ai'
   }
 ]

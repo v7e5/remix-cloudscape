@@ -7,7 +7,6 @@ const Z = memo(() => {
   return (
     <SB title='Badge'>
       <SpaceBetween size='m' direction='horizontal'>
-        <Badge color={false}>nien</Badge>
         <Badge color='red'>8</Badge>
         <Badge color='blue'>4</Badge>
         <Badge color='green'>2</Badge>
@@ -17,6 +16,11 @@ const Z = memo(() => {
   )
 })
 
+const handle = {
+  crumb: {text: 'Badge'}
+}
+
 export {
+  handle,
   Z as default
 }

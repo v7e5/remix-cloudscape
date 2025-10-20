@@ -77,6 +77,7 @@ const next = (draft, {action, ...rest}) => {
     }
     case 'sidenav_set': {
       draft.sidenav.items = rest.items
+      draft.sidenav.open = true
       break
     }
     case 'sidenav_toggle': {

@@ -1,17 +1,18 @@
 import {memo} from 'react'
 import {Outlet} from 'react-router'
 import {BaseProvider} from './context'
-
 import Drawer from './drawer_comp'
 
-const Z = memo(() => (
-  <BaseProvider>
-    <Outlet/>
-  </BaseProvider>
-))
+const Z = memo(() => {
+  return (
+    <BaseProvider>
+      <Outlet/>
+    </BaseProvider>
+  )
+})
 
 const handle = {
-  crumb: {text: 'ks', to: '/ks'},
+  crumb: {text: 'Components', to: '/ks'},
   contentType: 'dashboard',
   sidenav: {
     header: {to: '/ks', text: 'Components'},

@@ -9,7 +9,6 @@ const Z = memo(() => {
   const dispatch = useBaseDispatch()
 
   const diss = useCallback(ev => {
-    console.log(ev)
     dispatch({action: 'alert_toggle'})
   }, [])
 
@@ -37,7 +36,7 @@ const Z = memo(() => {
 })
 
 const handle = {
-  crumb: {text: 'alert'}
+  crumb: {text: 'Alert'}
 }
 
 export {
