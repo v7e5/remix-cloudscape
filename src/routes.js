@@ -88,6 +88,10 @@ const routes = [
         path: '/ks/progressbar'
       },
       {
+        file: 'routes/ks/propertyfilter.jsx',
+        path: '/ks/propertyfilter'
+      },
+      {
         file: 'routes/ks/seg-cont.jsx',
         path: '/ks/seg-cont'
       },
