@@ -28,6 +28,10 @@ const routes = [
         path: '/ks/breadcrumb'
       },
       {
+        file: 'routes/ks/cards.jsx',
+        path: '/ks/cards'
+      },
+      {
         file: 'routes/ks/sidenav.jsx',
         path: '/ks/sidenav'
       },
