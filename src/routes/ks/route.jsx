@@ -33,7 +33,7 @@ const handle = {
       {type: 'link', text: 'Date input', to: '/ks/form#datetimes'},
       {type: 'link', text: 'Date picker', to: '/ks/form#datetimes'},
       {type: 'link', text: 'Drawer', to: '/ks/drawer'},
-      {type: 'link', text: 'Expandable section', to: '/ks/expandablesection'},
+      {type: 'link', text: 'Expandable section', to: '/ks/expandable-section'},
       {type: 'link', text: 'File upload', to: '/ks/form#file-upload'},
       {type: 'link', text: 'Flashbar', to: '/ks/flashbar'},
       {type: 'link', text: 'Form container (Form)', to: '/ks/form#texts'},
