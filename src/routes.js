@@ -52,9 +52,13 @@ const routes = [
         path: '/ks/expandable-section'
       },
       {
+        file: 'routes/ks/flashbar.jsx',
+        path: '/ks/flashbar'
+      },
+      {
         file: 'routes/ks/sidenav.jsx',
         path: '/ks/sidenav'
-      },
+      }
     ]
   }
 ]
