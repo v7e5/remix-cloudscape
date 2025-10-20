@@ -23,7 +23,7 @@ const Z = memo(() => {
         <Link fontSize='inherit'>fontSize: inherit</Link>
 
         <Link color='normal'>color: normal</Link>
-        <div style={{backgroundColor: 'currentColor'}}>
+        <div style={{backgroundColor: 'currentcolor'}}>
           <Link color='inverted'>color: inverted</Link>
         </div>
       </SpaceBetween>
