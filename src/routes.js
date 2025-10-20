@@ -80,6 +80,10 @@ const routes = [
         path: '/ks/modal'
       },
       {
+        file: 'routes/ks/pagination.jsx',
+        path: '/ks/pagination'
+      },
+      {
         file: 'routes/ks/seg-cont.jsx',
         path: '/ks/seg-cont'
       },

@@ -1,5 +1,5 @@
-import {memo} from 'react'
 import clsx from 'clsx'
+import {memo} from 'react'
 import InternalIcon from '../icon/internal'
 import styles from './styles.css.js'
 import {getPaginationState, range} from './utils'
@@ -40,10 +40,11 @@ const PageNumber = memo(({pageIndex, ...rest}) => {
   )
 })
 
-const Z = memo(({currentPage, pagesCount, disabled, onClick}) => {
+const Z = memo(({openEnd, currentPage, pagesCount, disabled, onClick}) => {
   const {leftDots, leftIndex, rightIndex, rightDots} = getPaginationState(
     currentPage,
-    pagesCount
+    pagesCount,
+    openEnd
   )
   return (
     <ul className={clsx(styles.root, disabled && styles['root-disabled'])}>
@@ -74,7 +75,7 @@ const Z = memo(({currentPage, pagesCount, disabled, onClick}) => {
         />
       ))}
       {rightDots && <li className={styles.dots}>...</li>}
-      {pagesCount > 1 && (
+      {!openEnd && pagesCount > 1 && (
         <PageNumber
           isCurrent={currentPage === pagesCount}
           pageIndex={pagesCount}
@@ -85,7 +86,10 @@ const Z = memo(({currentPage, pagesCount, disabled, onClick}) => {
       <PageButton
         className={styles.arrow}
         pageIndex={currentPage + 1}
-        disabled={disabled || pagesCount === 0 || currentPage === pagesCount}
+        disabled={
+          disabled ||
+          (!openEnd && (pagesCount === 0 || currentPage === pagesCount))
+        }
         onClick={onClick}>
         <InternalIcon
           name='angle-right'
