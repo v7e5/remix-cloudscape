@@ -32,6 +32,10 @@ const routes = [
         path: '/ks/cards'
       },
       {
+        file: 'routes/ks/column-layout.jsx',
+        path: '/ks/column-layout'
+      },
+      {
         file: 'routes/ks/sidenav.jsx',
         path: '/ks/sidenav'
       },
