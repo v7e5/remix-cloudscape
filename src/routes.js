@@ -84,6 +84,10 @@ const routes = [
         path: '/ks/pagination'
       },
       {
+        file: 'routes/ks/progressbar.jsx',
+        path: '/ks/progressbar'
+      },
+      {
         file: 'routes/ks/seg-cont.jsx',
         path: '/ks/seg-cont'
       },
