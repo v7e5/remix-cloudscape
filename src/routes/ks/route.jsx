@@ -21,7 +21,7 @@ const handle = {
       {type: 'link', text: 'Autosuggest', to: '/ks/form#autosuggests'},
       {type: 'link', text: 'Badge', to: '/ks/badge'},
       {type: 'link', text: 'Box', to: '/ks/box'},
-      {type: 'link', text: 'Breadcrumb group', to: '/ks/breadcrumb-group'},
+      {type: 'link', text: 'Breadcrumb group', to: '/ks/breadcrumb'},
       {type: 'link', text: 'Button', to: '/ks/form#selects'},
       {type: 'link', text: 'Button dropdown', to: '/ks/form#selects'},
       {type: 'link', text: 'Calendar', to: '/ks/form#datetimes'},

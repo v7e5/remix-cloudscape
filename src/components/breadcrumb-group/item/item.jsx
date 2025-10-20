@@ -14,12 +14,13 @@ const Item = memo(({anchorAttributes, children, isLast, ...itemAttributes}) =>
   )
 )
 const BreadcrumbItem = memo(
-  ({item, isDisplayed, isLast = false, isCompressed = false}) => {
+  ({item, onClick, isDisplayed, isLast = false, isCompressed = false}) => {
     const itemAttributes = {
       className: clsx(styles.anchor, {[styles.compressed]: isCompressed})
     }
     const anchorAttributes = {
-      to: item.to || '#'
+      to: item.to || '#',
+      onClick
     }
     return (
       <div className={clsx(styles.breadcrumb, isLast && styles.last)}>

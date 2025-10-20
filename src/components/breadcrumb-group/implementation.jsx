@@ -1,14 +1,14 @@
-import {memo} from 'react'
-import styles from './styles.css.js'
 import clsx from 'clsx'
-import InternalIcon from '../icon/internal'
-import InternalButtonDropdown from '../button-dropdown/internal'
+import {memo} from 'react'
 import {InternalButton} from '../button/internal'
-import {BreadcrumbItem} from './item/item'
+import InternalButtonDropdown from '../button-dropdown/internal'
+import {useInternalI18n} from '../i18n/context'
+import InternalIcon from '../icon/internal'
 import {getBaseProps} from '../internal/base-component'
 import {useMobile} from '../internal/hooks/use-mobile'
-import {useInternalI18n} from '../i18n/context'
 import {createWidgetizedComponent} from '../internal/widgets'
+import {BreadcrumbItem} from './item/item'
+import styles from './styles.css.js'
 
 const DEFAULT_EXPAND_ARIA_LABEL = 'Show path'
 const getDropdownTrigger = ({
@@ -16,13 +16,18 @@ const getDropdownTrigger = ({
   triggerRef,
   disabled,
   testUtilsClass,
-  isOpen
+  isOpen,
+  onClick
 }) => {
   return (
     <InternalButton
       ref={triggerRef}
       className={testUtilsClass}
       disabled={disabled}
+      onClick={event => {
+        event.preventDefault()
+        onClick()
+      }}
       ariaExpanded={isOpen}
       aria-haspopup={true}
       ariaLabel={ariaLabel}
@@ -32,25 +37,35 @@ const getDropdownTrigger = ({
     </InternalButton>
   )
 }
-const EllipsisDropdown = memo(({ariaLabel, dropdownItems}) => {
-  const i18n = useInternalI18n('breadcrumb-group')
-  return (
-    <li className={styles.ellipsis}>
-      <InternalButtonDropdown
-        ariaLabel={
-          i18n('expandAriaLabel', ariaLabel) ?? DEFAULT_EXPAND_ARIA_LABEL
-        }
-        items={dropdownItems}
-        customTriggerBuilder={getDropdownTrigger}
-      />
-      <span className={styles.icon}>
-        <InternalIcon name='angle-right' />
-      </span>
-    </li>
-  )
-})
+const EllipsisDropdown = memo(
+  ({ariaLabel, dropdownItems, onDropdownItemClick}) => {
+    const i18n = useInternalI18n('breadcrumb-group')
+    return (
+      <li className={styles.ellipsis}>
+        <InternalButtonDropdown
+          ariaLabel={
+            i18n('expandAriaLabel', ariaLabel) ?? DEFAULT_EXPAND_ARIA_LABEL
+          }
+          items={dropdownItems}
+          onItemClick={onDropdownItemClick}
+          customTriggerBuilder={getDropdownTrigger}
+        />
+        <span className={styles.icon}>
+          <InternalIcon name='angle-right' />
+        </span>
+      </li>
+    )
+  }
+)
 const BreadcrumbGroupImplementation = memo(
-  ({items = [], ariaLabel, expandAriaLabel, __internalRootRef, ...props}) => {
+  ({
+    items = [],
+    ariaLabel,
+    expandAriaLabel,
+    onClick,
+    __internalRootRef,
+    ...props
+  }) => {
     const baseProps = getBaseProps(props)
     const isMobile = useMobile()
     let breadcrumbItems = items.map((item, index) => {
@@ -59,6 +74,7 @@ const BreadcrumbGroupImplementation = memo(
         <li className={styles.item} key={index}>
           <BreadcrumbItem
             item={item}
+            onClick={onClick}
             isCompressed={isMobile}
             isLast={isLast}
             isDisplayed={!isMobile || isLast || index === 0}
@@ -81,6 +97,7 @@ const BreadcrumbGroupImplementation = memo(
           key={'ellipsis'}
           ariaLabel={expandAriaLabel}
           dropdownItems={dropdownItems}
+          onDropdownItemClick={onClick}
         />,
         ...breadcrumbItems.slice(1)
       ]
