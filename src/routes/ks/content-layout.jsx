@@ -19,7 +19,7 @@ const Z = memo(() => {
 })
 
 const handle = {
-  crumb: {text: 'Box'}
+  crumb: {text: 'Content layout'}
 }
 
 export {

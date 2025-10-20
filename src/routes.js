@@ -44,6 +44,10 @@ const routes = [
         path: '/ks/content-layout'
       },
       {
+        file: 'routes/ks/drawer.jsx',
+        path: '/ks/drawer'
+      },
+      {
         file: 'routes/ks/sidenav.jsx',
         path: '/ks/sidenav'
       },
