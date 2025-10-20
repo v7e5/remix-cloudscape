@@ -64,6 +64,14 @@ const routes = [
         path: '/ks/header'
       },
       {
+        file: 'routes/ks/icon.jsx',
+        path: '/ks/icon'
+      },
+      {
+        file: 'routes/ks/link.jsx',
+        path: '/ks/link'
+      },
+      {
         file: 'routes/ks/sidenav.jsx',
         path: '/ks/sidenav'
       }
