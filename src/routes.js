@@ -76,6 +76,14 @@ const routes = [
         path: '/ks/loading-bar'
       },
       {
+        file: 'routes/ks/modal.jsx',
+        path: '/ks/modal'
+      },
+      {
+        file: 'routes/ks/seg-cont.jsx',
+        path: '/ks/seg-cont'
+      },
+      {
         file: 'routes/ks/sidenav.jsx',
         path: '/ks/sidenav'
       }
