@@ -100,6 +100,10 @@ const routes = [
         path: '/ks/space-between'
       },
       {
+        file: 'routes/ks/spinner.jsx',
+        path: '/ks/spinner'
+      },
+      {
         file: 'routes/ks/sidenav.jsx',
         path: '/ks/sidenav'
       }
