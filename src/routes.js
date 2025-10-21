@@ -122,6 +122,10 @@ const routes = [
       {
         file: 'routes/ks/table-expan.jsx',
         path: '/ks/table-expan'
+      },
+      {
+        file: 'routes/ks/tabs.jsx',
+        path: '/ks/tabs'
       }
     ]
   }
