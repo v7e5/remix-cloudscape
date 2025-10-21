@@ -126,6 +126,10 @@ const routes = [
       {
         file: 'routes/ks/tabs.jsx',
         path: '/ks/tabs'
+      },
+      {
+        file: 'routes/ks/textcontent.jsx',
+        path: '/ks/textcontent'
       }
     ]
   }
