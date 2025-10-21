@@ -56,7 +56,7 @@ const handle = {
       {type: 'link', text: 'Side navigation', to: '/ks/sidenav'},
       {type: 'link', text: 'Space between', to: '/ks/space-between'},
       {type: 'link', text: 'Spinner', to: '/ks/spinner'},
-      {type: 'link', text: 'Split panel', to: '/ks/split_panel'},
+      {type: 'link', text: 'Split panel', to: '/ks/split-panel'},
       {type: 'link', text: 'Status indicator', to: '/ks/statusindicator'},
       {type: 'link', text: 'Table', to: '/ks/table'},
       {type: 'link', text: 'Table (expanding rows)', to: '/ks/table/expan'},

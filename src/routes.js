@@ -104,6 +104,10 @@ const routes = [
         path: '/ks/spinner'
       },
       {
+        file: 'routes/ks/split-panel/route.jsx',
+        path: '/ks/split-panel'
+      },
+      {
         file: 'routes/ks/sidenav.jsx',
         path: '/ks/sidenav'
       }
