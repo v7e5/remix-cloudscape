@@ -78,6 +78,10 @@ const next = (draft, {action, ...rest}) => {
       draft.tokengroup.items.splice(rest.index, 1)
       break
     }
+    case 'tokengroup_reset': {
+      draft.tokengroup.items = rest.items
+      break
+    }
   }
 }
 const reducer = create(next)

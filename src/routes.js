@@ -134,6 +134,10 @@ const routes = [
       {
         file: 'routes/ks/textfilter.jsx',
         path: '/ks/textfilter'
+      },
+      {
+        file: 'routes/ks/tokengroup.jsx',
+        path: '/ks/tokengroup'
       }
     ]
   }
