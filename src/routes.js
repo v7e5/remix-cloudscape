@@ -138,6 +138,10 @@ const routes = [
       {
         file: 'routes/ks/tokengroup.jsx',
         path: '/ks/tokengroup'
+      },
+      {
+        file: 'routes/ks/topnav.jsx',
+        path: '/ks/topnav'
       }
     ]
   }
