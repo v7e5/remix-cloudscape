@@ -142,6 +142,10 @@ const routes = [
       {
         file: 'routes/ks/topnav.jsx',
         path: '/ks/topnav'
+      },
+      {
+        file: 'routes/ks/form/route.jsx',
+        path: '/ks/form'
       }
     ]
   }
