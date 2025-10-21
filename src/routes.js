@@ -118,6 +118,10 @@ const routes = [
       {
         file: 'routes/ks/table.jsx',
         path: '/ks/table'
+      },
+      {
+        file: 'routes/ks/table-expan.jsx',
+        path: '/ks/table-expan'
       }
     ]
   }

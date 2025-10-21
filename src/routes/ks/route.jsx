@@ -59,7 +59,7 @@ const handle = {
       {type: 'link', text: 'Split panel', to: '/ks/split-panel'},
       {type: 'link', text: 'Status indicator', to: '/ks/status-indicator'},
       {type: 'link', text: 'Table', to: '/ks/table'},
-      {type: 'link', text: 'Table (expanding rows)', to: '/ks/table/expan'},
+      {type: 'link', text: 'Table (expanding rows)', to: '/ks/table-expan'},
       {type: 'link', text: 'Tabs', to: '/ks/tabs'},
       {type: 'link', text: 'Text area', to: '/ks/form#texts'},
       {type: 'link', text: 'Text content', to: '/ks/textcontent'},
