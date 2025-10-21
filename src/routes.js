@@ -96,6 +96,10 @@ const routes = [
         path: '/ks/seg-cont'
       },
       {
+        file: 'routes/ks/sidenav.jsx',
+        path: '/ks/sidenav'
+      },
+      {
         file: 'routes/ks/space-between.jsx',
         path: '/ks/space-between'
       },
@@ -108,8 +112,8 @@ const routes = [
         path: '/ks/split-panel'
       },
       {
-        file: 'routes/ks/sidenav.jsx',
-        path: '/ks/sidenav'
+        file: 'routes/ks/status-indicator.jsx',
+        path: '/ks/status-indicator'
       }
     ]
   }

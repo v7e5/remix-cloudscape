@@ -57,7 +57,7 @@ const handle = {
       {type: 'link', text: 'Space between', to: '/ks/space-between'},
       {type: 'link', text: 'Spinner', to: '/ks/spinner'},
       {type: 'link', text: 'Split panel', to: '/ks/split-panel'},
-      {type: 'link', text: 'Status indicator', to: '/ks/statusindicator'},
+      {type: 'link', text: 'Status indicator', to: '/ks/status-indicator'},
       {type: 'link', text: 'Table', to: '/ks/table'},
       {type: 'link', text: 'Table (expanding rows)', to: '/ks/table/expan'},
       {type: 'link', text: 'Tabs', to: '/ks/tabs'},
