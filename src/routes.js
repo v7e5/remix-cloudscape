@@ -114,6 +114,10 @@ const routes = [
       {
         file: 'routes/ks/status-indicator.jsx',
         path: '/ks/status-indicator'
+      },
+      {
+        file: 'routes/ks/table.jsx',
+        path: '/ks/table'
       }
     ]
   }
