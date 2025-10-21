@@ -130,6 +130,10 @@ const routes = [
       {
         file: 'routes/ks/textcontent.jsx',
         path: '/ks/textcontent'
+      },
+      {
+        file: 'routes/ks/textfilter.jsx',
+        path: '/ks/textfilter'
       }
     ]
   }
