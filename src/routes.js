@@ -96,6 +96,10 @@ const routes = [
         path: '/ks/seg-cont'
       },
       {
+        file: 'routes/ks/space-between.jsx',
+        path: '/ks/space-between'
+      },
+      {
         file: 'routes/ks/sidenav.jsx',
         path: '/ks/sidenav'
       }
