@@ -25,6 +25,6 @@
   },
   "devDependencies": {
     "@react-router/dev": "^7.9.4",
-    "vite": "^7.1.10"
+    "vite": "^7.1.12"
   }
 }
