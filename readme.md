@@ -7,7 +7,7 @@ for each component.
 
 <video autoplay muted controls loop
   style='max-width: 100%; object-fit: contain;'
-  src=''>
+  src='https://github.com/user-attachments/assets/a1d20377-cc06-4bba-9e17-a578fc88c2f0'>
 </video>
 
 ## Usage
