@@ -61,7 +61,7 @@ internally).
 
     ```
 
-   - Example usage of Tiles component, with state handling managed internally.
+  - Example usage of Tiles component, with state handling managed internally.
     ```jsx
     import Tiles from '~/components/tiles'
     ...
