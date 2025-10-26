@@ -1,5 +1,4 @@
 import {memo} from 'react'
-import Toggle from '~/components/toggle'
 import TopNavigation from '~/components/top-navigation'
 
 const utilities = [
