@@ -5,10 +5,10 @@ Components](https://cloudscape.design) adapted for Remix. This repository is a
 Remix app containing the component library (in `src/components`) and demo pages
 for each component.
 
-<video style='max-width: 100%; object-fit: contain;'
-src='http://0.0.0.0:700/cloud_screencast.mp4' autoplay muted controls
-loop></video>
-
+<video autoplay muted controls loop
+  style='max-width: 100%; object-fit: contain;'
+  src=''>
+</video>
 
 ## Usage
 ```shell
